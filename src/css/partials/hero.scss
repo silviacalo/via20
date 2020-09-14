@@ -1,0 +1,25 @@
+.hero {
+  display: flex;
+  align-items: center;
+  height: 600px;
+  background-image: url('../../contents/hero.jpg');
+  background-size: cover;
+
+  @media (max-width: 576px) {
+    height: 300px;
+  }
+
+  &__title {
+    color: $white;
+    font-size: 54px;
+    line-height: 80px;
+    font-weight: $bold;
+    border-radius: 4px;
+    padding: 20px 30px;
+
+    @media (max-width: 576px) {
+      font-size: 30px;
+      line-height: 42px;
+    }
+  }
+}

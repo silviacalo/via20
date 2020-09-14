@@ -1,0 +1,50 @@
+.social {
+  display: flex;
+  &__link {
+    display: block;
+    margin-left: 20px;
+
+    svg {
+      width: 34px;
+      height: 34px;
+    }
+
+    &--instagram {
+      svg {
+        color: #e9392a;
+      }
+
+      &:hover {
+        svg {
+          color: #ca291b;
+        }
+      }
+    }
+
+    &--mail {
+      svg {
+        color: #212529;
+      }
+
+      &:hover {
+        svg {
+          color: black;
+        }
+      }
+    }
+
+    &--contrast {
+      svg {
+        color: white;
+        opacity: 0.8;
+      }
+
+      &:hover {
+        svg {
+          color: white;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}

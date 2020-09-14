@@ -1,0 +1,44 @@
+/* Font
+==================================================*/
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700&display=swap');
+$titillium: 'Titillium Web', sans-serif;
+$light:     300;
+$regular:   400;
+$semibold:  600;
+$bold:      700;
+
+
+/* Colors
+==================================================*/
+$white:       #fff;
+
+$black:       #303030;
+$gray:        #4c5862;
+
+
+body {
+  font-family: $titillium;
+  margin: 0;
+}
+
+#page-content {
+  padding-top: 96px;
+  padding-bottom: 100px;
+
+  @media (max-width: 576px) {
+    padding-bottom: 158px;
+  }
+}
+
+.under-title {
+  display: block;
+  background-color: #303030;
+  height: 3px;
+  width: 50%;
+  margin-top: 12px;
+}
+
+li {
+  font-size: 20px;
+  line-height: 36px;
+}

@@ -1,0 +1,40 @@
+.section {
+  padding: 50px 0;
+  &--hero {
+    padding: 0;
+  }
+
+  &__info {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 20px;
+  }
+
+  &__img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+  }
+
+  &__galleryImg {
+    height: 200px;
+    width: 300px;
+    margin: 0 auto;
+
+    &--accessory {
+      height: 300px;
+    }
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 36px;
+  }
+}

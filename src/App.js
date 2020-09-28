@@ -79,10 +79,10 @@ class App extends React.Component {
                     </ul>
                   </navigation>
                   <div className= "social ml-auto ml-md-0">
-                    <a href="https://www.facebook.com/lpstylelucipatty/" target="_blank" title="Facebook" className="social__link">
+                    <a href="https://www.facebook.com/lpstylelucipatty/" target="_blank" rel="noopener noreferrer" title="Facebook" className="social__link">
                       <Facebook />
                     </a>
-                    <a href="https://www.instagram.com/via20_via20/" target="_blank" title="Instagram" className="social__link social__link--instagram">
+                    <a href="https://www.instagram.com/via20_via20/" target="_blank" rel="noopener noreferrer" title="Instagram" className="social__link social__link--instagram">
                       <Instagram />
                     </a>
                     <a href="mailto:lpstyle@yahoo.it" title="Scrivi a VIA20" className="social__link social__link--mail">
@@ -257,7 +257,7 @@ class App extends React.Component {
                     <div class="col-md-6">
                       <div className="section__info">
                         <div class="embed-responsive embed-responsive-4by3">
-                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2209.0541118721453!2d9.682378280863237!3d45.3608811744007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47813b38972a9ff9%3A0xe41d4bee575eb459!2sVia%2020!5e0!3m2!1sit!2sit!4v1599402232470!5m2!1sit!2sit"></iframe>
+                          <iframe title="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2209.0541118721453!2d9.682378280863237!3d45.3608811744007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47813b38972a9ff9%3A0xe41d4bee575eb459!2sVia%2020!5e0!3m2!1sit!2sit!4v1599402232470!5m2!1sit!2sit"></iframe>
                         </div>
                       </div>
                     </div>
@@ -302,10 +302,10 @@ class App extends React.Component {
                 <div className="footer__info">
                   <div>Seguici su:</div>
                   <div className= "social mt-3">
-                    <a href="https://www.facebook.com/lpstylelucipatty/" target="_blank" className="social__link ml-0">
+                    <a href="https://www.facebook.com/lpstylelucipatty/" target="_blank" rel="noopener noreferrer" className="social__link ml-0">
                       <Facebook />
                     </a>
-                    <a href="https://www.instagram.com/via20_via20/" target="_blank" className="social__link social__link--instagram">
+                    <a href="https://www.instagram.com/via20_via20/" target="_blank" rel="noopener noreferrer" className="social__link social__link--instagram">
                       <Instagram />
                     </a>
                     <a href="mailto:lpstyle@yahoo.it" title="Scrivi a VIA20" className="social__link social__link--contrast">

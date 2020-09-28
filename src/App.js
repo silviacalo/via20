@@ -166,7 +166,7 @@ class App extends React.Component {
                   <h2 className="section__subtitle">Borse</h2>
                   <p>
                     Tracolle, pochettes, borse zaino e tanto altro. Ecco un assaggio dei nostri immancabili evergreen e pezzi forti:
-                    venite a scoprirli in negozio inieme alle tante novità stagionali! 
+                    venite a scoprirli in negozio insieme alle tante novità stagionali! 
                   </p>
                   <Slider {...settings} className="mb-5">
                     <div>

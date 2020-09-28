@@ -25,6 +25,7 @@ import Slider from "react-slick";
 class App extends React.Component {
   componentDidMount() {
     scrollToComponent(this.Blue, { offset: 0, align: 'middle', duration: 500, ease:'inCirc'});
+    document.title = "Via20 Crema"
   }
 
   render () {

@@ -24,10 +24,6 @@ body {
 #page-content {
   padding-top: 96px;
   padding-bottom: 100px;
-
-  @media (max-width: 576px) {
-    padding-bottom: 158px;
-  }
 }
 
 .under-title {

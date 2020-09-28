@@ -275,8 +275,8 @@ class App extends React.Component {
               <div className="col-6 col-md-3">
                 <div className="footer__info">
                   <div>Orari:</div>
-                  <div>Lunedì-Sabato: 9-12.30/ 15.30-19.30</div>
-                  <div>Domenica: 10-12.30/ 15.30-19.30</div>
+                  <div>Lunedì-Sabato: 9-12.30/ 15.30-19.00</div>
+                  <div>Domenica: 10-12.30/ 15.30-19.00</div>
                 </div>
               </div>
               <div className="col-6 col-md-3">

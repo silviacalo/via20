@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Router, Location } from "@reach/router"
 import Header from './components/header';
 import Footer from './components/footer';
@@ -7,6 +7,9 @@ import Gallery from './routes/gallery';
 import Contatti from './routes/contatti';
 
 const App = () => {
+  useEffect(()=>{
+    document.title = "Via20 Crema"
+  })
   return (
     <Location>
       {({ location }) => (

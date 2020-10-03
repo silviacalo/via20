@@ -1,5 +1,10 @@
 .social {
   display: flex;
+
+  @media (max-width: 576px) {
+    align-items: center;
+    justify-content: start;
+  }
   &__link {
     display: block;
     margin-left: 20px;

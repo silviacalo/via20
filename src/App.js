@@ -3,7 +3,9 @@ import { Router, Location } from "@reach/router"
 import Header from './components/header';
 import Footer from './components/footer';
 import Homepage from './routes/homepage';
-import Gallery from './routes/gallery';
+import Abbigliamento from './routes/abbigliamento';
+import Borse from './routes/borse';
+import Accessori from './routes/accessori';
 import Contatti from './routes/contatti';
 
 const App = () => {
@@ -18,7 +20,9 @@ const App = () => {
         <div id="page-content">
           <Router location={location}>
             <Homepage path="/" default/>
-            <Gallery path="/gallery" />
+            <Abbigliamento path="/abbigliamento"/>
+            <Borse path="/borse"/>
+            <Accessori path="/accessori"/>
             <Contatti path="/contatti" />
           </Router>
         </div>

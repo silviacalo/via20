@@ -37,7 +37,7 @@ const Homepage = () => {
                     </em>
                     E così è stato anche per loro! <strong>Patrizia</strong> e <strong>Luciana</strong>, le titolari di VIA20, hanno 
                     iniziato la loro avventura per puro caso, con un sogno comune nel cassetto.<br/>
-                    Con <strong>professionalità, gentilezza e allegria</strong> vi aspettano nel loro store dove troverete una vasta gamma i prodotti sempre al passo 
+                    Con <strong>professionalità, gentilezza e allegria</strong> vi aspettano nel loro store dove troverete una vasta gamma di prodotti sempre al passo 
                     con la moda e con un tocco di originalità. Naturalmente tutto <strong>“made in Italy”.</strong>
                   </p>
                   <h2>I nostri servizi</h2>

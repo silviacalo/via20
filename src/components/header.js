@@ -7,6 +7,8 @@ import {ReactComponent as Email}  from '../contents/email.svg';
 
 const Header = ({location}) => {
   const [open, setOpen] = useState(false);
+  const [isOpenSub, setIsOpenSub] = useState(false);
+
   return (
     <div className="header">
       <div className="container">
@@ -24,7 +26,25 @@ const Header = ({location}) => {
                 </button>
                 <ul className="navigation__list">
                   <Link to="/" className={`navigation__item${location.pathname === "/" ? ' active' : ''}`} onClick={()=>{setOpen(false)}}>Home</Link>
-                  <Link to="/gallery" className={`navigation__item${location.pathname === "/gallery" ? ' active' : ''}`} onClick={()=>{setOpen(false)}}>Gallery</Link>
+                  <div className={`navigation__item has-sub${location.pathname === "/abbigliamento" || location.pathname === "/borse" || location.pathname === "/accessori"  ? ' active' : ''}`}>
+                    <button className="navigation__open" onClick={()=>{setIsOpenSub(!isOpenSub)}}>
+                      Gallery
+                      <i class={`arrow-down${isOpenSub ? ' rotate' : ''}`}></i>
+                    </button>
+                    <div className={`navigation__dropdown${isOpenSub ? ' d-block' : ' d-none'}`} onClick={()=>{setOpen(false)}}>
+                      <ul>
+                        <li>
+                          <Link to="/abbigliamento" className="navigation__sublink">Abbigliamento</Link>
+                        </li>
+                        <li>
+                          <Link to="/borse" className="navigation__sublink">Borse</Link>
+                        </li>
+                        <li>
+                          <Link to="/accessori" className="navigation__sublink">Accessori</Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                   <Link to="/contatti" className={`navigation__item${location.pathname === "/contatti" ? ' active' : ''}`} onClick={()=>{setOpen(false)}}>Contatti</Link>
                 </ul>
               </navigation>

@@ -7,6 +7,7 @@ import Abbigliamento from './routes/abbigliamento';
 import Borse from './routes/borse';
 import Accessori from './routes/accessori';
 import Contatti from './routes/contatti';
+import Negozio from './routes/negozio';
 
 const App = () => {
   useEffect(()=>{
@@ -23,6 +24,7 @@ const App = () => {
             <Abbigliamento path="/abbigliamento"/>
             <Borse path="/borse"/>
             <Accessori path="/accessori"/>
+            <Negozio path="/negozio"/>
             <Contatti path="/contatti" />
           </Router>
         </div>

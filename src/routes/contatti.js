@@ -4,7 +4,7 @@ const Contatti = () => {
 
   return (
     <>
-      <section className="section">
+      <section className="section container-borse">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -16,8 +16,8 @@ const Contatti = () => {
                 <div class="col-md-6">
                   <div className="section__info">
                     <div><strong>Orari:</strong></div>
-                    <div>Lunedì-Sabato: 9.30-12.30/ 15.30-19.00</div>
-                    <div>Domenica: 15.30-19.00</div>
+                    <div>Martedì-Sabato: 9.30-12.30/ 15.30-19.00</div>
+                    <div>Domenica e Lunedì: 15.30-19.00</div>
                   </div>
                   <div className="section__info">
                     <div><strong>Telefono:</strong></div>

@@ -31,12 +31,12 @@ const Borse = () => {
 
   return (
     <>
-      <section className="section">
+      <section className="section container-borse">
         <div className="container">
           <div className="row">
             <div className="col-12">
               <h1 className="section__title">
-                Abbigliamento
+                Borse
                 <span className="under-title"></span>
               </h1>
             </div>

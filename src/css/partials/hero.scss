@@ -2,8 +2,11 @@
   display: flex;
   align-items: center;
   height: 600px;
-  background-image: url('../../contents/hero.jpg');
+  background-image: url('../../contents/via20.jpeg');
   background-size: cover;
+  background-position-y: 42%;
+  opacity: 0.9;
+  
 
   @media (max-width: 576px) {
     height: 300px;
@@ -13,9 +16,10 @@
     color: $white;
     font-size: 54px;
     line-height: 80px;
+    text-align: right;
     font-weight: $bold;
     border-radius: 4px;
-    padding: 20px 30px;
+    padding: 20px 0px;
 
     @media (max-width: 576px) {
       font-size: 30px;

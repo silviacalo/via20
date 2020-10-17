@@ -31,7 +31,7 @@ const Abbigliamento = () => {
 
   return (
     <>
-      <section className="section">
+      <section className="section container-borse">
         <div className="container">
           <div className="row">
             <div className="col-12">

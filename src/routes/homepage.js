@@ -1,5 +1,6 @@
 import React from 'react';
-import user from '../contents/patrizia-luciana.jpg';
+import user from '../contents/luciana-patrizia.jpeg';
+import giftcard from '../contents/giftcard.jpeg';
 
 const Homepage = () => {
 
@@ -21,7 +22,7 @@ const Homepage = () => {
         </div>
       </section>
 
-      <section className="section pb-0 pb-md-5">
+      <section className="section pb-0 pb-md-5 container-homepage">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -52,6 +53,7 @@ const Homepage = () => {
                       Buoni regalo personalizzati
                     </li>
                   </ul>
+                  <img src={giftcard} alt="giftcard" class="section__img-gift"/>
                 </div>
                 <div className="col-md-4">
                   <img src={user} alt="Patrizia e Luciana" class="section__img"/>

@@ -9,6 +9,10 @@
     display: block;
     margin-left: 20px;
 
+    @media (max-width: 576px) {
+      margin-left: 10px;
+    }
+
     svg {
       width: 34px;
       height: 34px;
@@ -22,6 +26,18 @@
       &:hover {
         svg {
           color: #ca291b;
+        }
+      }
+    }
+
+    &--whatsapp {
+      svg {
+        color: #25d366;
+      }
+
+      &:hover {
+        svg {
+          color: rgba(#25d366, .7);
         }
       }
     }

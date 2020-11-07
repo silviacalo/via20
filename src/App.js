@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import {Helmet} from "react-helmet";
 import { Router, Location } from "@reach/router"
 import Header from './components/header';
 import Footer from './components/footer';
@@ -14,6 +15,13 @@ const App = () => {
     document.title = "Via20 Crema"
   })
   return (
+    <>
+    <Helmet>
+      <meta property="og:title" content="VIA20 Crema. Borse abbigliamento accessori" />
+      <meta property="og:image" content="https://via20crema.netlify.app/static/media/via20.17e9e32e.jpeg" />
+      <meta property="description" content="Negozio di borse, abbigliamento e accessori nel cuore della città di Crema."/>
+      <meta property="og:url" content="https://via20crema.netlify.app/"/>
+    </Helmet>
     <Location>
       {({ location }) => (
       <div>
@@ -32,6 +40,7 @@ const App = () => {
       </div>
       )}
     </Location>
+    </>
   )
 }
 

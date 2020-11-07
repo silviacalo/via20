@@ -14,12 +14,12 @@
 
   &__logo {
     img {
-      max-width: 150px;
+      max-width: 120px;
     }
 
     @media (max-width: 576px) {
       img {
-        max-width: 115px;
+        max-width: 80px;
       }  
     }
   }

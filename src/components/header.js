@@ -4,6 +4,7 @@ import logo from '../contents/logo.jpg';
 import {ReactComponent as Facebook}  from '../contents/facebook.svg';
 import {ReactComponent as Instagram} from '../contents/instagram.svg';
 import {ReactComponent as Whatsappfull}  from '../contents/whatsapp-full.svg';
+import {ReactComponent as Catalog}  from '../contents/catalog.svg';
 
 const Header = ({location}) => {
   const [open, setOpen] = useState(false);
@@ -60,8 +61,11 @@ const Header = ({location}) => {
                 <a href="https://www.instagram.com/via20_via20/" target="_blank" rel="noopener noreferrer" title="Instagram" className="social__link social__link--instagram">
                   <Instagram />
                 </a>
-                <a href="https://api.whatsapp.com/send?phone=+393517433312" target="_blank" rel="noopener noreferrer" className="social__link social__link--whatsapp">
+                <a href="https://api.whatsapp.com/send?phone=+393517433312" target="_blank" rel="noopener noreferrer" title="Contattaci su WhatsApp" className="social__link social__link--whatsapp">
                   <Whatsappfull />
+                </a>
+                <a href="https://www.whatsapp.com/catalog/393517433312/" target="_blank" rel="noopener noreferrer" title="Scopri il nostro catalogo" className="social__link social__link--catalog">
+                  <Catalog />
                 </a>
               </div>
             </div>

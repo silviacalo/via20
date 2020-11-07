@@ -16,6 +16,10 @@
     svg {
       width: 34px;
       height: 34px;
+      @media (max-width: 576px) {
+        width: 30px;
+        height: 30px;
+      }
     }
 
     &--instagram {
@@ -64,6 +68,23 @@
         svg {
           color: white;
           opacity: 0.5;
+        }
+      }
+    }
+
+    &--catalog {
+      
+      .fa-secondary {
+        fill: #e19741;
+      }
+
+      .fa-primary {
+        fill: #e07800;
+      }
+
+      &:hover {
+        svg {
+          opacity: 0.8;
         }
       }
     }

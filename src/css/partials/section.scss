@@ -51,4 +51,24 @@
     font-size: 20px;
     line-height: 36px;
   }
+
+  &__link {
+    svg {
+      width: 34px;
+      height: 34px;
+      margin-bottom: 8px;
+      
+      .fa-secondary {
+        fill: #e19741;
+      }
+
+      .fa-primary {
+        fill: #e07800;
+      }
+      @media (max-width: 576px) {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
 }

@@ -43,7 +43,7 @@
     background-color: transparent;
     text-decoration: none;
     color: $black;
-    margin-left: 30px;
+    margin-left: 16px;
 
     @media (max-width: 576px) {
       display: block;
@@ -65,10 +65,10 @@
 
     &.active {
       color: $black;
-      font-weight: 600;
+      font-weight: 700;
 
       .navigation__open {
-        font-weight: 600;
+        font-weight: 700;
       }
     }
 

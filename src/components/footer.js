@@ -3,6 +3,7 @@ import {ReactComponent as Facebook}  from '../contents/facebook.svg';
 import {ReactComponent as Whatsapp}  from '../contents/whatsapp.svg';
 import {ReactComponent as Whatsappfull}  from '../contents/whatsapp-full.svg';
 import {ReactComponent as Instagram} from '../contents/instagram.svg';
+import {ReactComponent as Catalog}  from '../contents/catalog.svg';
 
 const Footer = () => {
 
@@ -54,16 +55,23 @@ const Footer = () => {
                 <a href="https://api.whatsapp.com/send?phone=+393517433312" target="_blank" rel="noopener noreferrer" className="social__link social__link--whatsapp">
                   <Whatsappfull />
                 </a>
+                <a href="https://www.whatsapp.com/catalog/393517433312/" target="_blank" rel="noopener noreferrer" title="Scopri il nostro catalogo" className="social__link social__link--catalog">
+                  <Catalog />
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </footer>
-    <div class="contatti d-flex align-items-center justify-content-center">
-      <a href="https://api.whatsapp.com/send?phone=+393517433312" target="_blank" rel="noopener noreferrer">
+    <div class="contatti d-flex align-items-center justify-content-around">
+      <a href="https://api.whatsapp.com/send?phone=+393517433312" target="_blank" rel="noopener noreferrer" className="contatti__link green">
         <Whatsapp />
         Contattaci
+      </a>
+      <a href="https://www.whatsapp.com/catalog/393517433312/" target="_blank" rel="noopener noreferrer" title="Scopri il nostro catalogo" className="contatti__link orange">
+        <Catalog />
+        Catalogo Online
       </a>
     </div>
   </>

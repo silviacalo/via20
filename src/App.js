@@ -17,9 +17,12 @@ const App = () => {
   return (
     <>
     <Helmet>
-      <meta property="og:title" content="VIA20 Crema. Borse abbigliamento accessori" />
-      <meta property="og:image" content="https://via20crema.netlify.app/static/media/via20.17e9e32e.jpeg" />
-      <meta property="description" content="Negozio di borse, abbigliamento e accessori nel cuore della città di Crema."/>
+      <title>My VIA20 Crema. Borse abbigliamento accessori</title>
+      <meta name="description" content="Negozio di borse, abbigliamento e accessori nel cuore della città di Crema." />
+      <meta property="image" content="https://via20crema.netlify.app/static/media/via20.17e9e32e.jpeg" />
+      <meta property="og:title" content="My VIA20 Crema. Borse abbigliamento accessori"/>
+      <meta property="og:description" content="Negozio di borse, abbigliamento e accessori nel cuore della città di Crema."/>
+      <meta property="og:image" content="https://via20crema.netlify.app/static/media/via20.17e9e32e.jpeg"/>
       <meta property="og:url" content="https://via20crema.netlify.app/"/>
     </Helmet>
     <Location>

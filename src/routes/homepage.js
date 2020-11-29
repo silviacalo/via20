@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "@reach/router"
 import user from '../contents/luciana-patrizia.jpeg';
 import giftcard from '../contents/giftcard.jpeg';
 import {ReactComponent as Catalog}  from '../contents/catalog.svg';
@@ -57,24 +58,25 @@ const Homepage = () => {
           <div className="row">
             <div className="col-12">
               <h1 className="section__title">
-                Aggiornamenti DPCM del 04 novembre 2020
+                Riapertura dal 29 novembre 2020
                 <span className="under-title"></span>
               </h1>
               <div className="row">
                 <div className="col-md-8">
                   <p>
-                    A seguito del DPCM del 04 novembre 2020, il negozio è <strong>momentaneamente chiuso</strong>. 
-                    Noi restiamo però più attive che mai!
+                    Siamo tornate!
+                    Da domenica 29 novembre vi aspettiamo <strong>in negozio</strong>!<br/>
+                    Potete trovare <Link to="/contatti">qui</Link> i nostri orari.
                   </p>
                   <p>
-                    &Egrave; infatti disponibile il nostro nuovo&nbsp;
+                    Resta disponibile e sempre aggiornato il nostro&nbsp;
                     <a href="https://www.whatsapp.com/catalog/393517433312/" target="_blank" rel="noopener noreferrer" title="Scopri il nostro catalogo" className="section__link">
                       Catalogo Online <Catalog />
                     </a>,
                     dove troverete foto, info e prezzi di tutti i nostri prodotti. Seleziona ciò che desideri, invia il messaggio di WhatsApp e al resto...ci pensiamo noi!
                   </p>
                   <p>
-                    Nell'attesa di rivederci presto e in totale sicurezza, vi ricordiamo i nostri servizi:
+                    Vi ricordiamo infine i nostri servizi:
                   </p>
                   <ul>
                     <li>

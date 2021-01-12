@@ -20,9 +20,9 @@ const Header = ({location}) => {
         <div className="row">
           <div className="col-12">
             <div className="d-flex align-items-center">
-              <div className="header__logo">
+              <Link to="/" className="header__logo">
                 <img src={logo} alt="Via20Crema"/>
-              </div>
+              </Link>
               <navigation className={`navigation order-2 order-md-1 ml-md-auto${open === true ? ' open' : ''}`}>
                 <button onClick={()=>{setOpen(!open)}} className="navigation__hamburger ml-1 d-md-none">
                   <div class="bar1"></div>

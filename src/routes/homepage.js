@@ -45,7 +45,7 @@ const Homepage = () => {
                   </p>
                 </div>
                 <div className="col-md-4">
-                  <img src={user} alt="Patrizia e Luciana" class="section__img"/>
+                  <img src={user} alt="Patrizia e Luciana" className="section__img"/>
                 </div>
               </div>
             </div>
@@ -92,7 +92,7 @@ const Homepage = () => {
                       Buoni regalo personalizzati
                     </li>
                   </ul>
-                  <img src={giftcard} alt="giftcard" class="section__img-gift"/>
+                  <img src={giftcard} alt="giftcard" className="section__img-gift"/>
                 </div>
               </div>
             </div>

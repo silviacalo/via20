@@ -64,7 +64,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-    <div class="contatti d-flex align-items-center justify-content-around">
+    <div className="contatti d-flex align-items-center justify-content-around">
       <a href="https://api.whatsapp.com/send?phone=+393517433312" target="_blank" rel="noopener noreferrer" className="contatti__link green">
         <Whatsapp />
         Contattaci

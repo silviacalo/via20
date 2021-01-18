@@ -1,32 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Gallery from 'react-grid-gallery';
-import Vestiti1 from '../contents/vestiti/1.jpeg';
-import Vestiti2 from '../contents/vestiti/2.jpeg';
-import Vestiti3 from '../contents/vestiti/3.jpeg';
-import Vestiti4 from '../contents/vestiti/4.jpeg';
-import Vestiti5 from '../contents/vestiti/5.jpeg';
-import Vestiti6 from '../contents/vestiti/6.jpeg';
-import Vestiti7 from '../contents/vestiti/7.jpeg';
-import Vestiti8 from '../contents/vestiti/8.jpeg';
-import Vestiti9 from '../contents/vestiti/9.jpeg';
-import Vestiti10 from '../contents/vestiti/10.jpeg';
-import Vestiti11 from '../contents/vestiti/11.jpeg';
-import Vestiti12 from '../contents/vestiti/12.jpeg';
 
 const Abbigliamento = () => {
-  const IMAGES = [{src: Vestiti1, thumbnail: Vestiti1, thumbnailWidth: 320, thumbnailHeight: 320},
-    {src: Vestiti2, thumbnail: Vestiti2, thumbnailWidth: 320, thumbnailHeight: 320},
-    {src: Vestiti3, thumbnail: Vestiti3, thumbnailWidth: 320, thumbnailHeight: 320},
-    {src: Vestiti4, thumbnail: Vestiti4, thumbnailWidth: 320, thumbnailHeight: 500},
-    {src: Vestiti5, thumbnail: Vestiti5, thumbnailWidth: 320, thumbnailHeight: 500},
-    {src: Vestiti6, thumbnail: Vestiti6, thumbnailWidth: 320, thumbnailHeight: 320},
-    {src: Vestiti7, thumbnail: Vestiti7, thumbnailWidth: 320, thumbnailHeight: 500},
-    {src: Vestiti8, thumbnail: Vestiti8, thumbnailWidth: 320, thumbnailHeight: 500},
-    {src: Vestiti9, thumbnail: Vestiti9, thumbnailWidth: 320, thumbnailHeight: 500},
-    {src: Vestiti10, thumbnail: Vestiti10, thumbnailWidth: 320, thumbnailHeight: 500},
-    {src: Vestiti11, thumbnail: Vestiti11, thumbnailWidth: 320, thumbnailHeight: 500},
-    {src: Vestiti12, thumbnail: Vestiti12, thumbnailWidth: 320, thumbnailHeight: 320},
-  ]
+  const [isRendered, setIsRendered] = useState(false);
+  const [images, setImages] = useState([]);  
+  const renderImages = async () => {
+    const data = await fetch("https://s3awasomeimagegallery.s3-eu-west-1.amazonaws.com/index.json");
+    const imageList = await data.json();
+    console.log(imageList);
+    const supportArray = [];
+    imageList.forEach(image => {
+      let imageName = image.Key.split("images/abbigliamento/")[1];
+      if(imageName && imageName !== "") {
+        let objImg = {
+          src: 'https://s3awasomeimagegallery.s3-eu-west-1.amazonaws.com/images/abbigliamento/' + imageName,
+          thumbnail: 'https://s3awasomeimagegallery.s3-eu-west-1.amazonaws.com/images/abbigliamento/' + imageName,
+          thumbnailWidth: 320, 
+          thumbnailHeight: 320
+        }
+        supportArray.push(objImg);
+      } 
+    })
+    setImages(supportArray);
+    setIsRendered(true);
+  }
+  useEffect(()=> {
+    renderImages();
+  }, []);
   
 
   return (
@@ -41,7 +41,10 @@ const Abbigliamento = () => {
               </h1>
             </div>
             <div className="col-12">
-              <Gallery images={IMAGES}/>
+              {
+                isRendered &&
+                <Gallery images={images}/>
+              }
             </div>
           </div>
         </div>

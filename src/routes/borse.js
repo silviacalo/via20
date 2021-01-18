@@ -1,32 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Gallery from 'react-grid-gallery';
-import Borse1 from '../contents/borse/1.jpeg';
-import Borse2 from '../contents/borse/2.jpeg';
-import Borse3 from '../contents/borse/3.jpeg';
-import Borse4 from '../contents/borse/4.jpeg';
-import Borse5 from '../contents/borse/5.jpeg';
-import Borse6 from '../contents/borse/6.jpeg';
-import Borse7 from '../contents/borse/7.jpg';
-import Borse8 from '../contents/borse/8.jpg';
-import Borse9 from '../contents/borse/9.jpg';
-import Borse10 from '../contents/borse/10.jpg';
-import Borse11 from '../contents/borse/11.jpg';
-import Borse12 from '../contents/borse/12.jpg';
 
 const Borse = () => {
-  const IMAGES = [{src: Borse1, thumbnail: Borse1, thumbnailWidth: 320, thumbnailHeight: 320},
-    {src: Borse2, thumbnail: Borse2, thumbnailWidth: 320, thumbnailHeight: 320},
-    {src: Borse3, thumbnail: Borse3, thumbnailWidth: 500, thumbnailHeight: 320},
-    {src: Borse4, thumbnail: Borse4, thumbnailWidth: 400, thumbnailHeight: 320},
-    {src: Borse5, thumbnail: Borse5, thumbnailWidth: 320, thumbnailHeight: 320},
-    {src: Borse6, thumbnail: Borse6, thumbnailWidth: 320, thumbnailHeight: 320},
-    {src: Borse7, thumbnail: Borse7, thumbnailWidth: 320, thumbnailHeight: 320},
-    {src: Borse8, thumbnail: Borse8, thumbnailWidth: 320, thumbnailHeight: 320},
-    {src: Borse9, thumbnail: Borse9, thumbnailWidth: 320, thumbnailHeight: 320},
-    {src: Borse10, thumbnail: Borse10, thumbnailWidth: 320, thumbnailHeight: 320},
-    {src: Borse11, thumbnail: Borse11, thumbnailWidth: 320, thumbnailHeight: 320},
-    {src: Borse12, thumbnail: Borse12, thumbnailWidth: 320, thumbnailHeight: 320},
-  ]
+  const [isRendered, setIsRendered] = useState(false);
+  const [images, setImages] = useState([]);  
+  const renderImages = async () => {
+    const data = await fetch("https://s3awasomeimagegallery.s3-eu-west-1.amazonaws.com/index.json");
+    const imageList = await data.json();
+    console.log(imageList);
+    const supportArray = [];
+    imageList.forEach(image => {
+      let imageName = image.Key.split("images/borse/")[1];
+      if(imageName && imageName !== "") {
+        let objImg = {
+          src: 'https://s3awasomeimagegallery.s3-eu-west-1.amazonaws.com/images/borse/' + imageName,
+          thumbnail: 'https://s3awasomeimagegallery.s3-eu-west-1.amazonaws.com/images/borse/' + imageName,
+          thumbnailWidth: 320, 
+          thumbnailHeight: 320
+        }
+        supportArray.push(objImg);
+      } 
+    })
+    setImages(supportArray);
+    setIsRendered(true);
+  }
+  useEffect(()=> {
+    renderImages();
+  }, []);
   
 
   return (
@@ -41,7 +41,10 @@ const Borse = () => {
               </h1>
             </div>
             <div className="col-12">
-              <Gallery images={IMAGES}/>
+              {
+                isRendered && 
+                <Gallery images={images}/>
+              }
             </div>
           </div>
         </div>

@@ -23,18 +23,18 @@ const Header = ({location}) => {
               <Link to="/" className="header__logo">
                 <img src={logo} alt="Via20Crema"/>
               </Link>
-              <navigation className={`navigation order-2 order-md-1 ml-md-auto${open === true ? ' open' : ''}`}>
+              <nav className={`navigation order-2 order-md-1 ml-md-auto${open === true ? ' open' : ''}`}>
                 <button onClick={()=>{setOpen(!open)}} className="navigation__hamburger ml-1 d-md-none">
-                  <div class="bar1"></div>
-                  <div class="bar2"></div>
-                  <div class="bar3"></div>
+                  <div className="bar1"></div>
+                  <div className="bar2"></div>
+                  <div className="bar3"></div>
                 </button>
                 <ul className="navigation__list">
                   <Link to="/" className={`navigation__item${location.pathname === "/" ? ' active' : ''}`} onClick={()=>{setOpen(false)}}>Home</Link>
                   <div className={`navigation__item has-sub${location.pathname === "/abbigliamento" || location.pathname === "/borse" || location.pathname === "/accessori"  ? ' active' : ''}`}>
                     <button className="navigation__open" onClick={()=>{setIsOpenSub(!isOpenSub)}}>
                       Gallery
-                      <i class={`arrow-down${isOpenSub ? ' rotate' : ''}`}></i>
+                      <i className={`arrow-down${isOpenSub ? ' rotate' : ''}`}></i>
                     </button>
                     <div className={`navigation__dropdown${isOpenSub ? ' d-block' : ' d-none'}`} onClick={()=>{setOpen(false)}}>
                       <ul>
@@ -53,7 +53,7 @@ const Header = ({location}) => {
                   <Link to="/negozio" className={`navigation__item${location.pathname === "/negozio" ? ' active' : ''}`} onClick={()=>{setOpen(false)}}>Negozio</Link>
                   <Link to="/contatti" className={`navigation__item${location.pathname === "/contatti" ? ' active' : ''}`} onClick={()=>{setOpen(false)}}>Contatti</Link>
                 </ul>
-              </navigation>
+              </nav>
               <div className= "social d-md-flex order-1 order-md-2 ml-auto ml-md-0">
                 <a href="https://www.facebook.com/lpstylelucipatty/" target="_blank" rel="noopener noreferrer" title="Facebook" className="social__link">
                   <Facebook />

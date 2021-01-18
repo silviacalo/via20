@@ -25,13 +25,13 @@ const Negozio = () => {
                   </p>
                 </div>
                 <div className="col-md-4">
-                  <img src={interno1} alt="Interno1" class="section__img"/>
+                  <img src={interno1} alt="Interno1" className="section__img"/>
                 </div>
                 <div className="col-md-4">
-                  <img src={interno2} alt="Interno1" class="section__img"/>
+                  <img src={interno2} alt="Interno1" className="section__img"/>
                 </div>
                 <div className="col-md-12 mt-4">
-                  <img src={esterno} alt="esterno" class="section__img"/>
+                  <img src={esterno} alt="esterno" className="section__img"/>
                 </div>
               </div>
             </div>

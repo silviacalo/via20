@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "@reach/router"
 import user from '../contents/luciana-patrizia.jpeg';
 import giftcard from '../contents/giftcard.jpeg';
 import {ReactComponent as Catalog}  from '../contents/catalog.svg';

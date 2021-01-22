@@ -58,18 +58,16 @@ const Homepage = () => {
           <div className="row">
             <div className="col-12">
               <h1 className="section__title">
-                Riapertura dal 29 novembre 2020
+                Aggiornamento Dpcm del 14 gennaio 2021
                 <span className="under-title"></span>
               </h1>
               <div className="row">
                 <div className="col-md-8">
                   <p>
-                    Siamo tornate!
-                    Da domenica 29 novembre vi aspettiamo <strong>in negozio</strong>!<br/>
-                    Potete trovare <Link to="/contatti">qui</Link> i nostri orari.
+                    A seguito dell'ultimo Dpcm e dell'attuale collocazione in zona rossa, il negozio è momentaneamente chiuso.
                   </p>
                   <p>
-                    Resta disponibile e sempre aggiornato il nostro&nbsp;
+                    Restano sempre aggiornati i nostri canali social ed in particolare il nostro&nbsp;
                     <a href="https://www.whatsapp.com/catalog/393517433312/" target="_blank" rel="noopener noreferrer" title="Scopri il nostro catalogo" className="section__link">
                       Catalogo Online <Catalog />
                     </a>,

@@ -2,6 +2,7 @@ import React from 'react';
 import user from '../contents/luciana-patrizia.jpeg';
 import giftcard from '../contents/giftcard.jpeg';
 import {ReactComponent as Catalog}  from '../contents/catalog.svg';
+import { Link } from "@reach/router"
 
 const Homepage = () => {
 
@@ -57,16 +58,19 @@ const Homepage = () => {
           <div className="row">
             <div className="col-12">
               <h1 className="section__title">
-                Aggiornamento Dpcm del 14 gennaio 2021
+                Aggiornamento: apertura dal 1 febbraio 2021
                 <span className="under-title"></span>
               </h1>
               <div className="row">
                 <div className="col-md-8">
                   <p>
-                    A seguito dell'ultimo Dpcm e dell'attuale collocazione in zona rossa, il negozio è momentaneamente chiuso.
+                    Siamo tornate! Vi aspettiamo in negozio per scoprire tante novità e super offerte, 
+                    sempre nel rispetto delle normative vigenti e nella più totale sicurezza. <br/>
+                    Potete trovare <Link to="/contatti" className="navigation__sublink">qui</Link> tutti i nostri orari o seguirci sulle 
+                    pagine social per rimanere sempre aggiornati su aperture straordinarie.
                   </p>
                   <p>
-                    Restano sempre aggiornati i nostri canali social ed in particolare il nostro&nbsp;
+                    Resta attivo il nostro&nbsp;
                     <a href="https://www.whatsapp.com/catalog/393517433312/" target="_blank" rel="noopener noreferrer" title="Scopri il nostro catalogo" className="section__link">
                       Catalogo Online <Catalog />
                     </a>,

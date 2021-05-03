@@ -57,14 +57,10 @@ const Homepage = () => {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <h1 className="section__title">
-                Aggiornamento: apertura dal 1 febbraio 2021
-                <span className="under-title"></span>
-              </h1>
               <div className="row">
                 <div className="col-md-8">
                   <p>
-                    Siamo tornate! Vi aspettiamo in negozio per scoprire tante novità e super offerte, 
+                    Vi aspettiamo in negozio per scoprire tante novità e super offerte, 
                     sempre nel rispetto delle normative vigenti e nella più totale sicurezza. <br/>
                     Potete trovare <Link to="/contatti" className="navigation__sublink">qui</Link> tutti i nostri orari o seguirci sulle 
                     pagine social per rimanere sempre aggiornati su aperture straordinarie.
